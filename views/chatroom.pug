@@ -1,0 +1,35 @@
+//- chatroom.pug
+extends layout  
+
+block content 
+  main.chatroom-page
+    //- Room Selection Section
+    #room-selection.room-selection
+      h2 Join a Chatroom
+      input(type="text" id="roomId" placeholder="Enter Room ID" aria-label="Room ID")
+      button#joinRoomBtn.btn Join Room
+
+    //- Chat Interface Section (Hidden by Default)
+    #chat-interface.chat-interface.hidden
+      //- User Profiles Sidebar
+      aside.user-profiles
+        h3 Online Users
+        ul
+          li
+            img(src="assets/images/user1.png" alt="User 1" class="profile-pic")
+            span John Doe
+          li
+            img(src="assets/images/user2.png" alt="User 2" class="profile-pic")
+            span Jane Smith
+          li
+            img(src="assets/images/user3.png" alt="User 3" class="profile-pic")
+            span Mike Johnson
+          // Add more user profiles as needed
+
+      //- Chat Area
+      section.chat-area
+        div#chatMessages.chat-messages
+          // Chat messages will appear here
+        div.chat-input
+          input(type="text" id="chatMessage" placeholder="Type your message..." aria-label="Chat Message")
+          button#sendMessageBtn.btn Send

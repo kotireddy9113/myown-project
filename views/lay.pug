@@ -1,0 +1,19 @@
+//- layout.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{pageTitle}
+    link(rel="stylesheet" href="./assets/css/style.css") 
+
+  body(class="cpp-page")
+    header
+      nav
+        a(href="/") Home
+        a(href="/aboutus") Aboutus 
+        a(href="/profile") Profile
+        
+    block content  // Block for specific page content
+
+    script(src="./assets/js/script.js") 

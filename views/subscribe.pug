@@ -1,0 +1,12 @@
+//- subscribe.pug
+extends layout 
+
+block content
+  main.subscribe-container
+   
+    //- Success message (will be shown after successful subscription)
+    if email
+      h2 Thank You for Subscribing!
+      p We appreciate your interest in Code Sync. You will receive updates and news at the email you provided: 
+      strong #{email}
+      a(href="./", class="btn", aria-label="Go to Home") Go to Home

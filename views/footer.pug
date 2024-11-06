@@ -1,0 +1,37 @@
+.footer-top
+  h1.code-sync-text CodeSync
+.footer-container
+
+  
+  //- Newsletter Subscription
+  .footer-section.newsletter
+    h4 Subscribe to our Newsletter
+    form(action="/subscribe", method="POST", id="newsletterForm", aria-label="Newsletter Subscription")
+      input(
+        type="email",
+        id="newsletter-email",
+        name="email",
+        placeholder="Enter your email",
+        required,
+        aria-label="Email Address"
+      )
+      button(type="submit", aria-label="Subscribe to Newsletter") Subscribe
+
+   //- Social Media Icons
+  .footer-section.social-icons
+    h4 Follow Us
+    a(href="https://facebook.com/codesync", target="_blank", aria-label="Facebook", rel="noopener noreferrer")
+      img(src="https://static.vecteezy.com/system/resources/previews/018/930/476/original/facebook-logo-facebook-icon-transparent-free-png.png", alt="Facebook Icon", width="32", height="32")
+    a(href="https://twitter.com/codesync", target="_blank", aria-label="Twitter", rel="noopener noreferrer")
+      img(src="https://clipartcraft.com/images/twitter-transparent-logo-social-media.png", alt="Twitter Icon", width="32", height="32")
+    a(href="https://instagram.com/codesync", target="_blank", aria-label="Instagram", rel="noopener noreferrer")
+      img(src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png", alt="Instagram Icon", width="32", height="32")
+    a(href="https://linkedin.com/company/codesync", target="_blank", aria-label="LinkedIn", rel="noopener noreferrer")
+      img(src="https://th.bing.com/th/id/OIP.w_zDkEJ9aLiWR-g0rff8hwHaHa?rs=1&pid=ImgDetMain", alt="LinkedIn Icon", width="32", height="32")
+
+//- Footer Bottom and Back to Top
+.footer-bottom
+  p &copy; 2024 Code Sync. All Rights Reserved.
+  a(href="#", class="back-to-top", id="backToTop", aria-label="Back to Top", style="display:none;") 
+    i.fas.fa-arrow-up Back to Top
+

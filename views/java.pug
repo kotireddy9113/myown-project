@@ -1,0 +1,129 @@
+//- java.pug
+extends l1
+
+block content
+  //-header
+    //-nav
+      a(href="./index") Home
+      a(href="./c") C Practice
+      a(href="./cplus") C++ Practice
+      a(href="./python") Python Practice
+      a(href="./java") Java Practice
+      a(href="./javascript") JavaScript Practice
+
+  main
+    h1 Java Programming Practice
+
+    section.introduction-section
+      h2 Introduction to Java Programming
+      p
+        | Java is a high-level, class-based, object-oriented programming language that was designed to have as few implementation dependencies as possible. 
+        | It was originally developed by James Gosling at Sun Microsystems and released in 1995. 
+        | Java is known for its portability, as it can run on any device that has the Java Virtual Machine (JVM) installed. 
+        | The language emphasizes the principles of object-oriented programming, such as encapsulation, inheritance, and polymorphism. 
+        | Java's syntax is similar to C and C++, making it easier for programmers with a background in those languages to learn. 
+        | It is widely used in web development, mobile applications, and enterprise software due to its robustness and scalability.
+
+    section.quiz-section
+      h2 Quiz Questions
+      form
+        ul.quiz-list
+          li
+            | What is a class in Java?
+            ul
+              li
+                input(type="radio", name="q1", value="a")
+                |  A blueprint for creating objects
+              li
+                input(type="radio", name="q1", value="b")
+                |  A type of variable
+              li
+                input(type="radio", name="q1", value="c")
+                |  A collection of functions
+              li
+                input(type="radio", name="q1", value="d")
+                |  A data type
+          li
+            | What does the 'static' keyword mean?
+            ul
+              li
+                input(type="radio", name="q2", value="a")
+                |  It belongs to the class, not instances
+              li
+                input(type="radio", name="q2", value="b")
+                |  It defines an instance variable
+              li
+                input(type="radio", name="q2", value="c")
+                |  It indicates a final variable
+              li
+                input(type="radio", name="q2", value="d")
+                |  It is a type of constructor
+          li
+            | How do you declare an array in Java?
+            ul
+              li
+                input(type="radio", name="q3", value="a")
+                |  int[] arr;
+              li
+                input(type="radio", name="q3", value="b")
+                |  arr[] int;
+              li
+                input(type="radio", name="q3", value="c")
+                |  array int arr;
+              li
+                input(type="radio", name="q3", value="d")
+                |  int arr[];
+          li
+            | What is the main method in Java?
+            ul
+              li
+                input(type="radio", name="q4", value="a")
+                |  The entry point of any Java application
+              li
+                input(type="radio", name="q4", value="b")
+                |  A method for printing output
+              li
+                input(type="radio", name="q4", value="c")
+                |  A method for input
+              li
+                input(type="radio", name="q4", value="d")
+                |  A method for exception handling
+          li
+            | What is inheritance in Java?
+            ul
+              li
+                input(type="radio", name="q5", value="a")
+                |  A mechanism to create new classes based on existing ones
+              li
+                input(type="radio", name="q5", value="b")
+                |  A method to hide variables
+              li
+                input(type="radio", name="q5", value="c")
+                |  A method for error handling
+              li
+                input(type="radio", name="q5", value="d")
+                |  A way to define interfaces
+
+        button(type="button", onclick="calculateScore('java')") Submit
+        button(type="button", onclick="resetQuiz()") Reset
+
+    section.program-section
+      h2 Example Programs
+      pre
+        code
+          | // Java Program to Find the Factorial of a Number
+          |
+          | public class Factorial {
+          |     static int factorial(int n) {
+          |         if (n == 0)
+          |             return 1;
+          |         else
+          |             return n * factorial(n - 1);
+          |     }
+          |
+          |     public static void main(String[] args) {
+          |         int num = 5;
+          |         System.out.println("Factorial of " + num + " is " + factorial(num));
+          |     }
+          | }
+    script(src="./assets/js/quiz.js")

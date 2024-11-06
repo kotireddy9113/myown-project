@@ -1,0 +1,19 @@
+div.logo Code Sync
+nav
+  a(href="/UsersPractice") Practice
+  a(href="/Coding") Coding
+  a(href="/Usersprofile") Profile 
+  
+div.header-right
+  button#theme-toggle.theme-toggle(aria-label="Toggle Theme") 🌙
+  div.user-profile
+  span #{name || 'Guest'}  
+  button.user-dropdown-btn(aria-haspopup="true" aria-expanded="false" aria-label="User Menu") ▼
+  div.user-dropdown-content(aria-label="User Dropdown Menu")
+    a#logout(href="/index" aria-label="Logout") Logout
+
+
+  script(src="./assets/js/header.js")
+  script(src="./assets/js/footer.js")
+  script(src="./routes/login.js")
+

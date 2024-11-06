@@ -1,0 +1,44 @@
+/* General Styles for the Subscribe Container */
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Heading Styles */
+  .subscribe-container h1 {
+    font-size: 2.5em; /* Large font size */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark text color */
+  }
+  
+  /* Paragraph Styles */
+  .subscribe-container p {
+    font-size: 1.2em; /* Medium font size */
+    margin-bottom: 30px; /* Space below the paragraph */
+    color: #666; /* Gray text color */
+  }
+  
+  /* Button Styles */
+  .subscribe-container .btn {
+    display: inline-block; /* Allow padding */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1em; /* Font size */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Button Hover Effect */
+  .subscribe-container .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

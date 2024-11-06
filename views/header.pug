@@ -1,0 +1,14 @@
+div.logo Code Sync
+nav
+  a(href="./index") Home
+  a(href="./aboutus") About Us
+  a(href="./contact") Contact
+  
+div.header-right
+  button#theme-toggle.theme-toggle(aria-label="Toggle Theme") 🌙
+  div.user-profile
+  span #{ name || 'Guest'}  
+  button.user-dropdown-btn(aria-haspopup="true" aria-expanded="false" aria-label="User Menu") ▼
+  div.user-dropdown-content(aria-label="User Dropdown Menu")
+    a#logout(href="/index" aria-label="Logout") Logout
+

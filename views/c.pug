@@ -1,0 +1,123 @@
+extends l1
+
+block content
+  main
+    h1 C Programming Practice
+    
+    section.introduction-section
+      h2 Introduction to C Programming
+      p
+        | C is a general-purpose programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs.
+        | Initially designed for system programming and operating systems, it has become one of the most widely used programming languages.
+        | C is known for its efficiency, making it a popular choice for developing system software and applications that require high performance.
+        | The language is characterized by its use of keywords, functions, and control structures.
+        | C supports structured programming and has a rich set of built-in functions, enabling developers to write modular and reusable code.
+        | Key advantages of C include its speed, portability, and the ability to manipulate hardware directly.
+        | However, it also has disadvantages, such as the complexity of memory management and the lack of built-in error handling, which can lead to vulnerabilities.
+
+    section.quiz-section
+      h2 Quiz Questions
+      form.quiz-form  // Added a form element for submission handling
+        ul.quiz-list
+          li
+            | What is a pointer?
+            ul
+              li: label
+                input(type="radio", name="q1", value="a")
+                | A variable that stores memory addresses
+              li: label
+                input(type="radio", name="q1", value="b")
+                | A type of function
+              li: label
+                input(type="radio", name="q1", value="c")
+                | A keyword in C
+              li: label
+                input(type="radio", name="q1", value="d")
+                | A library in C
+          li
+            | Explain memory management in C.
+            ul
+              li: label
+                input(type="radio", name="q2", value="a")
+                | Automatic garbage collection
+              li: label
+                input(type="radio", name="q2", value="b")
+                | Manual allocation and deallocation
+              li: label
+                input(type="radio", name="q2", value="c")
+                | Using reference counting
+              li: label
+                input(type="radio", name="q2", value="d")
+                | Memory cannot be managed in C
+          li
+            | How do you declare a structure in C?
+            ul
+              li: label
+                input(type="radio", name="q3", value="a")
+                | struct structureName { };
+              li: label
+                input(type="radio", name="q3", value="b")
+                | structure structureName { };
+              li: label
+                input(type="radio", name="q3", value="c")
+                | declare structureName { };
+              li: label
+                input(type="radio", name="q3", value="d")
+                | struct structureName[];
+          li
+            | What is the purpose of the 'main' function in C?
+            ul
+              li: label
+                input(type="radio", name="q4", value="a")
+                | To declare variables
+              li: label
+                input(type="radio", name="q4", value="b")
+                | To serve as the entry point of the program
+              li: label
+                input(type="radio", name="q4", value="c")
+                | To define global functions
+              li: label
+                input(type="radio", name="q4", value="d")
+                | To handle errors
+          li
+            | What are keywords in C?
+            ul
+              li: label
+                input(type="radio", name="q5", value="a")
+                | Reserved words that have a predefined meaning
+              li: label
+                input(type="radio", name="q5", value="b")
+                | Variable names
+              li: label
+                input(type="radio", name="q5", value="c")
+                | Comments in code
+              li: label
+                input(type="radio", name="q5", value="d")
+                | Function names
+
+        button(type="button", onclick="calculateScore('c')") Submit
+        button(type="button", onclick="resetQuiz()") Reset
+
+    section.program-section
+      h2 Example Programs
+      pre
+        code
+          | // C Program to Find the Factorial of a Number
+          | #include <stdio.h>
+          |
+          | int factorial(int n) {
+          |     if (n == 0)
+          |         return 1;
+          |     else
+          |         return n * factorial(n-1);
+          | }
+          |
+          | int main() {
+          |     int num = 5;
+          |     printf("Factorial of %d is %d", num, factorial(num));
+          |     return 0;
+          | }
+    script(src="./assets/js/quiz.js") 
+
+
+  

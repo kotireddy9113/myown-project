@@ -1,0 +1,149 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Python Programming Practice
+    link(rel="stylesheet", href="./assets/css/c_style.css")
+
+  body.python-page
+    header
+      nav
+        a(href="/index") Home
+        a(href="/c") C Practice
+        a(href="/cplus") C++ Practice
+        a(href="/python") Python Practice
+        a(href="/java") Java Practice
+        a(href="/javascript") JavaScript Practice
+
+    main
+      h1 Python Programming Practice
+
+      section.introduction-section
+        h2 Introduction to Python Programming
+        p
+          | Python is a high-level, interpreted programming language created by Guido van Rossum and first released in 1991. 
+          | Known for its simplicity and readability, Python has become one of the most popular programming languages in the world. 
+          | Its design philosophy emphasizes code readability with the use of significant indentation. 
+          | Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming. 
+          | The language is widely used for web development, data analysis, artificial intelligence, scientific computing, and more. 
+          | Python's extensive standard library and active community contribute to its versatility and ease of use.
+
+      section.quiz-section
+        h2 Quiz Questions
+        ul.quiz-list
+          li
+            | What is a list in Python?
+            ul
+              li
+                label
+                  input(type="radio", name="q1", value="a")
+                  | A collection of items that are ordered and mutable
+              li
+                label
+                  input(type="radio", name="q1", value="b")
+                  | A collection of items that are unordered
+              li
+                label
+                  input(type="radio", name="q1", value="c")
+                  | A type of function
+              li
+                label
+                  input(type="radio", name="q1", value="d")
+                  | A variable that stores memory addresses
+          li
+            | What is the purpose of the 'def' keyword?
+            ul
+              li
+                label
+                  input(type="radio", name="q2", value="a")
+                  | To declare a function
+              li
+                label
+                  input(type="radio", name="q2", value="b")
+                  | To create a variable
+              li
+                label
+                  input(type="radio", name="q2", value="c")
+                  | To initiate a loop
+              li
+                label
+                  input(type="radio", name="q2", value="d")
+                  | To define a class
+          li
+            | How do you create a dictionary in Python?
+            ul
+              li
+                label
+                  input(type="radio", name="q3", value="a")
+                  | dict = {key: value}
+              li
+                label
+                  input(type="radio", name="q3", value="b")
+                  | dict = (key, value)
+              li
+                label
+                  input(type="radio", name="q3", value="c")
+                  | dict = [key, value]
+              li
+                label
+                  input(type="radio", name="q3", value="d")
+                  | dict = <key, value>
+          li
+            | What is a tuple?
+            ul
+              li
+                label
+                  input(type="radio", name="q4", value="a")
+                  | An immutable sequence of items
+              li
+                label
+                  input(type="radio", name="q4", value="b")
+                  | A mutable sequence of items
+              li
+                label
+                  input(type="radio", name="q4", value="c")
+                  | A type of function
+              li
+                label
+                  input(type="radio", name="q4", value="d")
+                  | A variable that stores memory addresses
+          li
+            | What is the output of print(2 ** 3)?
+            ul
+              li
+                label
+                  input(type="radio", name="q5", value="a")
+                  | 6
+              li
+                label
+                  input(type="radio", name="q5", value="b")
+                  | 8
+              li
+                label
+                  input(type="radio", name="q5", value="c")
+                  | 9
+              li
+                label
+                  input(type="radio", name="q5", value="d")
+                  | 5
+
+        button(type="button", onclick="calculateScore('python')") Submit
+        button(type="button", onclick="resetQuiz()") Reset
+
+      section.program-section
+        h2 Example Programs
+        pre
+          code
+            | # Python Program to Find the Factorial of a Number
+            |
+            | def factorial(n):
+            |     if n == 0:
+            |         return 1
+            |     else:
+            |         return n * factorial(n-1)
+            |
+            | num = 5
+            | print(f"Factorial of {num} is {factorial(num)}")
+            
+  script(src="./assets/js/quiz.js")

@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  //- Hero Section with Video Background
+  main.landing
+    #hero
+      video#bg-video(autoplay muted loop)
+        source(src="https://player.vimeo.com/external/309084256.hd.mp4?s=8fd06162fa41b6d1f83ae5a745960f0104b5c9f2&profile_id=175&oauth2_token_id=57447761", type="video/mp4")
+      .glass-container
+        h1 Collaborate to Code Sync 
+        p Join Code Sync for a seamless, real-time collaborative coding experience.
+        .buttons
+          a.btn(href="/login") Login
+          a.btn(href="/register") Register
+
+  //- Features Section with Cards
+  section.features
+    .card
+      h3 Real-time Collaboration
+      p Work with peers seamlessly in real-time.
+    .card
+      h3 Version Control
+      p Manage code versions with ease.
+    .card
+      h3 Practice Challenges
+      p Sharpen your coding skills with challenges.
+
+  
+
+  //- Testimonials Section
+  section.testimonials
+    .testimonial
+      p "Code Sync has transformed the way we collaborate!"
+      h4 - John Doe, Developer
+    .testimonial
+      p "Amazing platform for real-time coding."
+      h4 - Jane Smith, Engineer

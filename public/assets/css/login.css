@@ -1,0 +1,103 @@
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url("logo1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header styles */
+#header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 0; /* Padding for the header */
+    text-align: center; /* Center align the text */
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Adjust for header and footer height */
+}
+
+.form {
+    background: white; /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 300px; /* Fixed width for the form */
+}
+
+/* Heading styles */
+h1.heading {
+    font-size: 24px; /* Font size for the heading */
+    margin-bottom: 20px; /* Margin below the heading */
+    text-align: center; /* Center align the heading */
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside the input fields */
+    margin-bottom: 10px; /* Margin below the input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button styles */
+button.submit-btn {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Button hover effect */
+button.submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Alert message styles */
+.alert {
+    display: none; /* Hidden by default */
+    text-align: center; /* Center align the alert message */
+}
+
+/* Link styles */
+a.link {
+    display: block; /* Block display for the link */
+    margin-top: 10px; /* Margin above the link */
+    text-align: center; /* Center align the link */
+    color: #4CAF50; /* Green color for the link */
+    text-decoration: none; /* No underline */
+}
+
+/* Footer styles */
+footer {
+    color: white; /* White text */
+    text-align: center; /* Center align the text */
+    padding: 10px 0; /* Padding for the footer */
+    position: fixed; /* Fixed position for the footer */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width footer */
+}

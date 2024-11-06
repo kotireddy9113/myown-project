@@ -1,0 +1,22 @@
+//- layout.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{pageTitle}
+    link(rel="stylesheet" href="./assets/css/c_style.css") 
+
+  body(class="cpp-page")
+    header
+      nav
+        a(href="/Coding") Coding
+        a(href="/c") C Practice
+        a(href="/cplus") C++ Practice
+        a(href="/python") Python Practice
+        a(href="/java") Java Practice
+        a(href="/javascript") JavaScript Practice
+
+    block content // Block for specific page content
+
+    script(src="./assets/js/quiz.js") 

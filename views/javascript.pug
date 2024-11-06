@@ -1,0 +1,121 @@
+//- javascript.pug (Child template)
+extends l1
+
+block content
+  nav
+    a(href="./index") Home
+    a(href="./c") C Practice
+    a(href="./cplus") C++ Practice
+    a(href="./python") Python Practice
+    a(href="./java") Java Practice
+    a(href="./javascript") JavaScript Practice
+
+  main
+    h1 JavaScript Programming Practice
+    
+    section.introduction-section
+      h2 Introduction to JavaScript Programming
+      p
+        | JavaScript is a high-level, interpreted programming language that is primarily used for creating dynamic and interactive web content. 
+        | Developed by Brendan Eich in 1995, JavaScript has become an essential part of web development alongside HTML and CSS. 
+        | It is known for its versatility and is used for both front-end and back-end development, thanks to frameworks like Node.js. 
+        | JavaScript supports event-driven, functional, and imperative programming styles, allowing developers to create complex applications. 
+        | Its ability to manipulate the Document Object Model (DOM) makes it a powerful tool for enhancing user experiences on the web.
+
+    section.quiz-section
+      h2 Quiz Questions
+      ul.quiz-list
+        li
+          | What does 'var' declare in JavaScript?
+          ul
+            li
+              input(type="radio", name="q1", value="a")
+              | A variable with function scope
+            li
+              input(type="radio", name="q1", value="b")
+              | A variable that cannot be changed
+            li
+              input(type="radio", name="q1", value="c")
+              | A variable that is block-scoped
+            li
+              input(type="radio", name="q1", value="d")
+              | A constant variable
+        li
+          | What is the purpose of the 'this' keyword?
+          ul
+            li
+              input(type="radio", name="q2", value="a")
+              | To refer to the current object
+            li
+              input(type="radio", name="q2", value="b")
+              | To define a function
+            li
+              input(type="radio", name="q2", value="c")
+              | To create a new object
+            li
+              input(type="radio", name="q2", value="d")
+              | To refer to the global object
+        li
+          | How do you define a function in JavaScript?
+          ul
+            li
+              input(type="radio", name="q3", value="a")
+              | function myFunction() { }
+            li
+              input(type="radio", name="q3", value="b")
+              | myFunction() = { }
+            li
+              input(type="radio", name="q3", value="c")
+              | define myFunction() { }
+            li
+              input(type="radio", name="q3", value="d")
+              | function:myFunction() { }
+        li
+          | What is a closure in JavaScript?
+          ul
+            li
+              input(type="radio", name="q4", value="a")
+              | A function that retains access to its lexical scope
+            li
+              input(type="radio", name="q4", value="b")
+              | A method for error handling
+            li
+              input(type="radio", name="q4", value="c")
+              | A loop structure
+            li
+              input(type="radio", name="q4", value="d")
+              | A way to define classes
+        li
+          | What is an array in JavaScript?
+          ul
+            li
+              input(type="radio", name="q5", value="a")
+              | An ordered collection of items
+            li
+              input(type="radio", name="q5", value="b")
+              | A type of object
+            li
+              input(type="radio", name="q5", value="c")
+              | A function that returns values
+            li
+              input(type="radio", name="q5", value="d")
+              | A variable that holds a single value
+
+      button(type="button", onclick="calculateScore('javascript')") Submit
+      button(type="button", onclick="resetQuiz()") Reset
+
+    section.program-section
+      h2 Example Programs
+      pre
+        code.
+          // JavaScript Program to Find the Factorial of a Number
+          
+          function factorial(n) {
+              if (n === 0) return 1;
+              return n * factorial(n - 1);
+          }
+
+          const num = 5;
+          console.log(`Factorial of ${num} is ${factorial(num)}`);
+
+    script(src="./assets/js/quiz.js")

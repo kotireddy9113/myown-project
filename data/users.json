@@ -1,0 +1,65 @@
+[
+  {
+    "name": "sai",
+    "mobile": "8897465658",
+    "email": "sai@gmail.com",
+    "password": "456456456",
+    "dob": "2004-10-03"
+  },
+  {
+    "name": "sss",
+    "mobile": "8897465658",
+    "email": "ss@email.com",
+    "password": "123456789",
+    "dob": "2002-10-02"
+  },
+  {
+    "name": "Sruthi",
+    "mobile": "9849970432",
+    "email": "sruthi04@gmail.com",
+    "password": "987456321",
+    "dob": "2002-10-02"
+  },
+  {
+    "name": "sai",
+    "mobile": "8897465658",
+    "email": "sai@email.com",
+    "password": "8897465658",
+    "dob": "2004-10-01"
+  },
+  {
+    "name": "ss",
+    "mobile": "8897465658",
+    "email": "sais@email.com",
+    "password": "8897465656",
+    "dob": "2004-10-02"
+  },
+  {
+    "name": "balu",
+    "mobile": "4564564560",
+    "email": "balu@email.com",
+    "password": "456456456",
+    "dob": "2004-10-02"
+  },
+  {
+    "name": "amma",
+    "mobile": "8897465658",
+    "email": "a@email.com",
+    "password": "8897465658",
+    "dob": "2002-10-01"
+  },
+  {
+    "name": "nagi",
+    "mobile": "7894561230",
+    "email": "n@email.com",
+    "password": "7894561230",
+    "dob": "2004-10-01"
+  },
+  {
+    "name": "sai",
+    "mobile": "8897465658",
+    "email": "ws@email.com",
+    "password": "8897465658",
+    "dob": "2002-10-02"
+  }
+]

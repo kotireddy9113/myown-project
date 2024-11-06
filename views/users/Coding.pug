@@ -1,0 +1,20 @@
+extends Userslayout
+
+block content
+  link(rel="stylesheet", href="/assets/css/login.css")
+
+  main.dashboard-page
+    section.editor-section
+      h1 Welcome, #{user ? user.name : 'Guest'}!
+    //- Code Executor Section
+    section.code-executor
+      h2 Code Executor
+      form(action='/execute', method='POST')
+        select(name='language')
+          option(value='c') C
+          option(value='cpp') C++
+          option(value='java') Java
+          option(value='python3') Python 3
+          option(value='javascript') JavaScript
+        textarea(name='code', rows='10', cols='30', placeholder='Write your code here...' required)
+        button(type='submit') Execute

@@ -1,0 +1,31 @@
+//- practice.pug
+extends Userslayout
+
+//- Title and Stylesheets should be included in the layout, not here.
+block content
+    #Usersheader
+
+    main
+        h1 Practice Programming Languages
+        .languages-grid
+            a(href='./cplus', class='language-card')
+                .language-icon C++
+                p Practice C++
+            a(href='./python', class='language-card')
+                .language-icon Python
+                p Practice Python
+            a(href='./java', class='language-card')
+                .language-icon Java
+                p Practice Java
+            a(href='./c', class='language-card')
+                .language-icon C
+                p Practice C
+            a(href='./javascript', class='language-card')
+                .language-icon JavaScript
+                p Practice JavaScript
+
+    #Usersfooter
+        //- JavaScript Files
+        script(src="./assets/js/header.js")
+        script(src="./assets/js/footer.js")
+        script(src='./assets/js/script.js')
